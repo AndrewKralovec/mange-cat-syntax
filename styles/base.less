@@ -51,7 +51,6 @@ atom-text-editor {
   }
 }
 
-
 // Syntax styles
 
 .syntax--comment {
@@ -86,7 +85,7 @@ atom-text-editor {
   color: @orange;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @pink;
   }
 
   &.syntax--numeric {
@@ -94,7 +93,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @pink;
   }
 
   &.syntax--other.syntax--symbol {
@@ -122,9 +121,8 @@ atom-text-editor {
 .syntax--string {
   color: @green;
 
-
   &.syntax--regexp {
-    color: @cyan;
+    color: @pink;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
@@ -168,7 +166,6 @@ atom-text-editor {
   &.syntax--section.syntax--embedded {
     color: darken(@red, 10%);
   }
-
 }
 
 .syntax--support {
@@ -176,8 +173,8 @@ atom-text-editor {
     color: @light-orange;
   }
 
-  &.syntax--function  {
-    color: @cyan;
+  &.syntax--function {
+    color: @pink;
 
     &.syntax--any-method {
       color: @blue;
@@ -197,7 +194,8 @@ atom-text-editor {
   &.syntax--other.syntax--inherited-class {
     color: @green;
   }
-  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
     color: @light-orange;
   }
 
@@ -292,7 +290,6 @@ atom-text-editor {
     color: @green;
   }
 }
-
 
 // Mini editor
 
