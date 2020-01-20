@@ -55,14 +55,17 @@ atom-text-editor {
 
 .syntax--comment {
   color: @light-gray;
-  background-color: @dark-gray;
+  &.syntax--line {
+    background-color: @dark-gray;
+  }
 }
 
 .syntax--keyword {
-  color: @pink;
+  color: @extra-light-orange;
 
   &.syntax--control {
     color: @pink;
+    font-style: italic;
   }
 
   &.syntax--operator {
@@ -79,7 +82,7 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @pink;
+  color: @extra-light-orange;
 }
 
 .syntax--constant {
@@ -103,7 +106,11 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @red;
+  color: @very-light-gray;
+
+  &.syntax--object {
+    color: @red;
+  }
 
   &.syntax--interpolation {
     color: darken(@red, 10%);
@@ -139,9 +146,7 @@ atom-text-editor {
   &.syntax--definition {
     &.syntax--comment {
       color: @light-gray;
-      background-color: @dark-gray;
     }
-
     &.syntax--string,
     &.syntax--variable,
     &.syntax--parameters,
@@ -160,7 +165,7 @@ atom-text-editor {
     }
 
     &.syntax--italic {
-      color: @pink;
+      color: @extra-light-orange;
       font-style: italic;
     }
   }
@@ -177,6 +182,7 @@ atom-text-editor {
 
   &.syntax--function {
     color: @light-orange;
+    font-style: italic;
 
     &.syntax--any-method {
       color: @blue;
@@ -233,7 +239,7 @@ atom-text-editor {
   }
 
   &.syntax--selector {
-    color: @pink;
+    color: @extra-light-orange;
   }
 
   &.syntax--separator {
@@ -253,7 +259,7 @@ atom-text-editor {
   }
 
   &.syntax--changed {
-    color: @pink;
+    color: @extra-light-orange;
   }
 
   &.syntax--deleted {
@@ -261,7 +267,7 @@ atom-text-editor {
   }
 
   &.syntax--italic {
-    color: @pink;
+    color: @extra-light-orange;
     font-style: italic;
   }
 
