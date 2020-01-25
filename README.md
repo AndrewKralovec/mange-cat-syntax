@@ -9,3 +9,7 @@ This is a dark syntax color scheme for atom.
 ###### Bash file extension example
 
 [![bash-example.png](https://i.postimg.cc/4N0cpYXS/bash-example.png)](https://postimg.cc/svp1rDQY)
+
+###### Find replace example
+
+[![find-replace-ex.png](https://i.postimg.cc/XqF4JwGX/find-replace-ex.png)](https://postimg.cc/zHJ92Hk1)
